@@ -12,9 +12,9 @@ This repository presents the system design, target use cases, and a recorded dem
 
 ### Project Example
 
-![Object-counting project example](image.png)
+![Object-counting project example](use_case.png)
 
-The example demonstrates the intended outcome: identifying and counting individual objects in an image. The video shows the system operating on a difficult scene containing visually similar objects and partial occlusion.
+The example demonstrates the intended retail outcome: segmenting items, tracking scanned and removed objects, maintaining an accumulated count, and updating the total price. The video shows the system operating on a difficult scene containing visually similar objects and partial occlusion.
 
 ## The Problem
 
@@ -91,8 +91,8 @@ flowchart LR
 ├── README.md                         # Project overview and use cases
 ├── example.mp4                      # Recorded outcome demonstration
 ├── problem.png                      # Annotated challenge/example image
-├── image.png                        # Demonstrated project example
-├── use_case.png                     # Use-case overview
+├── image.png                        # Baseline visual-counting example
+├── use_case.png                     # Demonstrated project example
 └── .gitattributes                   # Git LFS configuration for video
 ```
 
