@@ -39,25 +39,6 @@ The proposed system combines spatial and temporal information to:
 - identify foreign objects in the monitored area; and
 - track object motion over time.
 
-## Conceptual Architecture
-
-```mermaid
-flowchart LR
-    A[Camera / Depth Sensor] --> B[Frame and Depth Capture]
-    B --> C[Scene Preprocessing]
-    C --> D[Class-Agnostic Segmentation]
-    D --> E[3D Instance Separation]
-    E --> F[Multi-Object Tracking]
-    F --> G[Counting and Event Logic]
-    G --> H[Live Results / Alerts]
-```
-
-1. **Capture** — acquire synchronized visual and spatial observations.
-2. **Segment** — separate candidate objects from the container or background.
-3. **Resolve instances** — use spatial cues to distinguish touching and occluded objects.
-4. **Track** — associate each object across consecutive observations.
-5. **Count** — update totals only when a defined event or boundary crossing occurs.
-
 ## Use Cases
 
 ### Manufacturing
